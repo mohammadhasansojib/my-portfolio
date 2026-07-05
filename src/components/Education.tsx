@@ -5,9 +5,9 @@ import { GraduationCap } from "lucide-react"
 const EDUCATION = [
   {
     degree: "BSc in Computer Science and Engineering",
-    institution: "Your University Name",
+    institution: "Uttara University",
     location: "Bangladesh",
-    duration: "20XX — Present",
+    duration: "2023 — Present",
     status: "Currently Pursuing",
     description:
       "Focused on core CS fundamentals — data structures, algorithms, database systems, and software engineering — alongside hands-on backend and full-stack web development.",

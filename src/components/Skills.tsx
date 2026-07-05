@@ -2,13 +2,19 @@
 
 const SKILL_CATEGORIES = [
   {
+    title: "Language",
+    skills: [
+      {name: "TypeScript", icon: "typescript"},
+      {name: "JavaScript", icon: "javascript"},
+      {name: "HTML", icon: "html"},
+    ],
+  },
+  {
     title: "Frontend",
     skills: [
       { name: "React", icon: "react" },
-      { name: "Next.js", icon: "nextjs" },
-      { name: "TypeScript", icon: "typescript" },
       { name: "Tailwind CSS", icon: "tailwind" },
-      { name: "JavaScript", icon: "javascript" },
+      {name: "CSS", icon: "css"},
     ],
   },
   {
@@ -33,7 +39,6 @@ const SKILL_CATEGORIES = [
       { name: "Git", icon: "git" },
       { name: "GitHub", icon: "github" },
       { name: "VS Code", icon: "vscode" },
-      { name: "Vercel", icon: "vercel" },
     ],
   },
 ]

@@ -1,13 +1,12 @@
 // components/Hero.tsx
 import { Button } from "@/components/ui/button"
-import { Download } from "lucide-react"
-import { FaGithub, FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa"
+import { Download, Eye } from "lucide-react"
+import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa"
 
 const SOCIAL_LINKS = [
-  { label: "GitHub", href: "https://github.com/your-username", icon: FaGithub },
-  { label: "LinkedIn", href: "https://linkedin.com/in/your-username", icon: FaLinkedin },
-  { label: "Twitter", href: "https://twitter.com/your-username", icon: FaTwitter },
-  { label: "Facebook", href: "https://facebook.com/your-username", icon: FaFacebook },
+  { label: "GitHub", href: "https://github.com/mohammadhasansojib", icon: FaGithub },
+  { label: "LinkedIn", href: "https://linkedin.com/in/iamhasansojib", icon: FaLinkedin },
+  { label: "Facebook", href: "https://facebook.com/iamhasansojib", icon: FaFacebook },
 ]
 
 
@@ -24,7 +23,7 @@ export function Hero() {
         </p>
 
         <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-          Hi, I'm <span className="text-primary">Hasan</span>
+          Hi, I'm <span className="text-primary">Mohammad Hasan Sojib</span>
         </h1>
 
         <p className="mt-4 max-w-md text-base text-muted-foreground sm:text-lg">
@@ -32,13 +31,20 @@ export function Hero() {
           applications with Node.js, PostgreSQL, and React.
         </p>
 
-        {/* Resume button */}
-        <Button asChild size="lg" className="mt-8">
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-            <Download className="mr-2 h-4 w-4" />
-            Download Resume
-          </a>
-        </Button>
+        {/* Resume buttons */}
+        <div className="mt-8 flex">
+          <Button asChild size="lg" className="rounded-r-none">
+            <a href="/resume.pdf" download rel="noopener noreferrer">
+              <Download className="mr-2 h-4 w-4" />
+              Resume
+            </a>
+          </Button>
+          <Button asChild size="lg" variant="outline" className="rounded-l-none border-l-0">
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="View Resume">
+              <Eye className="h-4 w-4" />
+            </a>
+          </Button>
+        </div>
 
         {/* Social links */}
         <div className="mt-6 flex items-center gap-3">
@@ -63,7 +69,7 @@ export function Hero() {
         <div className="h-40 w-40 overflow-hidden rounded-full border sm:h-56 sm:w-56 md:h-72 md:w-72 lg:h-80 lg:w-80">
           <img
             src="/profile.png"
-            alt="Hasan"
+            alt="Mohammad Hasan Sojib"
             className="h-full w-full object-cover"
           />
         </div>
